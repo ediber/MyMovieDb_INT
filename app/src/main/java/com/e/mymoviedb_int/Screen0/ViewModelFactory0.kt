@@ -1,4 +1,4 @@
-package com.e.mymoviedb_int
+package com.e.mymoviedb_int.Screen0
 
 import android.app.Application
 import androidx.lifecycle.ViewModel

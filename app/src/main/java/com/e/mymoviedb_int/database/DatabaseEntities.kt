@@ -15,12 +15,14 @@ data class DatabaseMovie(
 
     val popularity: Double,
 
+
     @PrimaryKey
     @ColumnInfo(name = "poster_path")
     val posterPath: String,
 
     val title: String,
 
+    // we use column info in case we want to give our field a different name from the name in json
     @ColumnInfo(name = "is_selected")
     val isSelected: Boolean = false,
 
