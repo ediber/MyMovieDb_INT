@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.e.mymoviedb_int.R
@@ -48,6 +49,7 @@ class Fragment0 : Fragment() {
         val adapter = MovieDbAdapter()
         recycler.adapter = adapter
         recycler.layoutManager = LinearLayoutManager(context)
+  //      recycler.layoutManager = GridLayoutManager(context, 3)
 
         view.findViewById<View>(R.id.btn_refresh).setOnClickListener(View.OnClickListener {
             viewModel.refreshMovieDBData()
